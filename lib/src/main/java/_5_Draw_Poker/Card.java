@@ -2,6 +2,7 @@ package _5_Draw_Poker;
 
 public class Card {
 	
+	//enumeration for card suits
 	public enum Suit {
 		SPADE,
 		HEART,
@@ -9,6 +10,7 @@ public class Card {
 		CLUB
 	}
 	
+	//enumeration for card ranks
 	public enum Rank {
 		TWO,
 		THREE,
@@ -40,6 +42,7 @@ public class Card {
 		return suit;
 	}
 	
+	//function to display card values
 	@Override
 	public String toString() {
 		String suitDisplay = "";

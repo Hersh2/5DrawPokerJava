@@ -12,6 +12,7 @@ public class Deck {
 	
 	private Stack<Card> cardDeck;
 	
+	//constructor to initialize deck
 	public Deck() {
 		this.cardDeck = new Stack<Card>();
 		for(Rank rank : Card.Rank.values()) {
@@ -21,10 +22,12 @@ public class Deck {
 		}
 	}
 	
+	//function to shuffle the cards in the deck
 	public void shuffle() {
 		Collections.shuffle(cardDeck);
 	}
 	
+	//function to return a number of cards from the deck
 	public List<Card> deal(int numberOfCards) {
 		List<Card> returnedCards = new ArrayList<>();
 		for(int i = 0; i < numberOfCards; i++) {

@@ -11,6 +11,7 @@ import _5_Draw_Poker.Card.Suit;
 
 public class HandEvaluator {
 	
+	//function to evaluate the cards in a hand
 	public String EvaluateHand(List<Card> hand) {
 		
 		Map<Rank,Integer> rankStore = new HashMap<>();
@@ -23,6 +24,7 @@ public class HandEvaluator {
 		return rankHand(rankStore, suitStore);
 	}
 	
+	//function to determine the highest value of a set of cards
 	protected String rankHand(Map<Rank,Integer> rankStore, Map<Suit,Integer> suitStore ) {
 		
 	    int pairs = 0;
